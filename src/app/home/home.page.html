@@ -45,6 +45,12 @@
           (click)="scrollToSection('projects')"
           >projects</span
         >
+        <span
+          class="menu__span"
+          data-color="primary-color"
+          (click)="scrollToSection('hero'); toggleSocialMedia($event);"
+          ><i class="fa-solid fa-share-nodes"></i></span
+        >
         <div class="themes">
           <div
             class="themes__list"
@@ -104,16 +110,17 @@
             ></div>
           </div>
         </div>
-        <!-- <button
+        <button
           type="button"
           class="meteor__toggle"
           (click)="toggleMeteors($event)"
           [ngClass]="{'active': isMeteorsActive}"
           id="meteor"
           aria-label="meteor"
+          hidden
         >
           <i class="fa-solid fa-meteor"></i>
-        </button> -->
+        </button>
       </div>
     </nav>
     <section id="hero" style="display: flex">
@@ -225,10 +232,8 @@
           </div>
           <div class="item__subheader">
             <span>
-              From interaction design to scaleable design systems, single-page
-              apps to something more experimental with WebGL. I help awesome
-              people to build ambitious yet accessible web projects -
-              <strong> the wilder, the better </strong>.
+              While I may be at the beginning of my professional journey, I am confident with my Frontend Skills. All I need is a chance to prove that I could build you any web apps -
+              <strong> from single-page app to scalable web applications </strong>.
             </span>
           </div>
         </div>
@@ -236,7 +241,7 @@
           class="item__button"
           data-color="tertiary-color"
           data-color-bg="transparent-color"
-          href="/assets/docs/delacruz-resume.pdf"
+          href="assets/docs/delacruz-resume.pdf"
           target="_blank"
           attributes-list=""
           download=""
@@ -288,7 +293,7 @@
             </div>
           </div>
           <div class="work">
-            <div class="date"><span>OCT 2023 — PRESENT</span></div>
+            <div class="date"><span>NOV 2023 — DEC 2024</span></div>
             <div class="body">
               <div class="details">
                 <div class="title">
@@ -312,16 +317,12 @@
                   </span>
                 </div>
               </div>
-              <!-- <div class="links">
+              <div class="links">
                 <a href="#" class="link" target="_blank">
-                  <i class="fa-solid fa-paperclip"></i>
-                  <span>OmniPay</span></a
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Salcedo Vilage, Makati City</span></a
                 >
-                <a href="#" class="link" target="_blank">
-                  <i class="fa-solid fa-paperclip"></i>
-                  <span>Binpo</span></a
-                >
-              </div> -->
+              </div>
               <div class="skills">
                 <span class="skill">ASP.NET MVC</span>
                 <span class="skill">C#</span>
@@ -354,8 +355,12 @@
                   </span>
                 </div>
               </div>
-              <!-- <div class="links">
-              </div> -->
+              <div class="links">
+                <a href="#" class="link" target="_blank">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Legazpi City, Albay</span></a
+                >
+              </div>
               <div class="skills">
                 <span class="skill">PHP</span>
                 <span class="skill">MySQL</span>
@@ -422,12 +427,12 @@
           </div>
           <div class="work education">
             <div class="date">
-              <img src="/assets/docs/cert1.png" alt="" />
+              <img src="assets/docs/cert1.png" alt="" />
             </div>
             <div class="body">
               <div class="details">
                 <div class="title">
-                  <a href="/assets/docs/cert1.png" target="_blank" class="">
+                  <a href="assets/docs/cert1.png" target="_blank" class="">
                     <strong
                       >Responsive Web Design &nbsp; · &nbsp;
                       freeCodeCamp.</strong
@@ -449,12 +454,12 @@
           </div>
           <div class="work education">
             <div class="date">
-              <img src="/assets/docs/cert2.png" alt="" />
+              <img src="assets/docs/cert2.png" alt="" />
             </div>
             <div class="body">
               <div class="details">
                 <div class="title">
-                  <a href="/assets/docs/cert2.png" target="_blank" class="">
+                  <a href="assets/docs/cert2.png" target="_blank" class="">
                     <strong
                       >JavaScript Algorithms and Data Structure &nbsp; · &nbsp;
                       freeCodeCamp.</strong
@@ -503,7 +508,7 @@
         <div class="scroll">
           <span><strong>Powered by </strong></span>
           <span class="hover"><strong>Ionic Angular</strong></span>
-          <img src="/assets/icon/Ionic Angular.png" alt="" />
+          <img src="assets/icon/Ionic Angular.png" alt="" />
         </div>
         <app-swiper-projects></app-swiper-projects>
       </div>
