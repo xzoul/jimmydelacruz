@@ -59,7 +59,7 @@ export class HomePage implements AfterViewInit {
   private iframes: HTMLIFrameElement[] = [];
   private tempDivs: HTMLDivElement[] = [];
   private renderer: Renderer2;
-  private defaultTheme: string = 'joker';
+  private defaultTheme: string = 'britanny';
   private currentTheme: string | null = null;
 
   constructor(
@@ -165,3 +165,8 @@ export class HomePage implements AfterViewInit {
 // To deploy to github pages
 // Command Prompt: ionic build --prod
 // Then Git Push
+
+// 11/24
+// ionic build --prod --base-href /jimmydelacruz/
+// npx angular-cli-ghpages --dir=docs
+// git push
