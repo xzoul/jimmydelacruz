@@ -44,7 +44,7 @@ import { MenuController } from '@ionic/angular';
     AvatarComponent,
     CommonModule,
     SwiperProjectsComponent,
-    IonicModule
+    IonicModule,
   ],
 })
 export class HomePage implements AfterViewInit {
@@ -160,7 +160,6 @@ export class HomePage implements AfterViewInit {
     localStorage.setItem('selectedTheme', theme);
   }
 }
-
 
 // To deploy to github pages
 // Command Prompt: ionic build --prod
